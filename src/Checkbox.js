@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-function Checkbox({message}) {
+function Checkbox(props) {
+    let message = props.message;
     const [isClicked, setIsClicked] = useState(false);
     
     const handleClick = () => {
@@ -17,6 +18,8 @@ function Checkbox({message}) {
     }else{
         divClassName = "flex-1 mx-1 my-1 bg-green-400";
     }
+
+    props.onDataReceived(isClicked);
 
     return(
         <div 
