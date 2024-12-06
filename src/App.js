@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+// import logo from './logo.svg';
 
 function App() {
+  // const divContent = "标签内容"
+  const divTitle = "标签标题"
+
+  const flag = false
+  let divContent = null
+
+  if (flag) {
+    const ele = (
+      <span>flag为true</span>
+    );
+    divContent = ele
+  }else{
+    divContent = <p>flag为false</p>
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div title={divTitle}>
+        {divContent}
+      </div>
+    </>
   );
 }
 
