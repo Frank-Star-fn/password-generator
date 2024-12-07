@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bg-green-5FB878 {
+    background-color: #5FB878;
+}

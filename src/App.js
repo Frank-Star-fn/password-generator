@@ -117,40 +117,32 @@ function App() {
         <hr/>
       </div>
       <div className='mb-3'>
-        <blockquote className='p-3.5 bg-gray-100'>
+        <blockquote className='p-3.5 border-s-4 bg-gray-100 border-emerald-600'>
           说明：请您妥善保管随机生成的密码，本站不会以任何方式存储生成的密码。
         </blockquote>
       </div>
-      <div className='flex'>
-        <label htmlFor="" className='flex-none px-2 py-1.5 bg-gray-100'>使用字符</label>
+      <div className='flex mb-3'>
+        <label htmlFor="" className='flex-none w-44 text-center px-2 py-1.5 bg-gray-100 border'>使用字符</label>
         
         <Checkbox message="0-9" onDataReceived={handleDataFromChild} />
         <Checkbox message="a-z" onDataReceived={handleDataFromChild2} />
         <Checkbox message="A-Z" onDataReceived={handleDataFromChild3} />
         <Checkbox message="!@#等" onDataReceived={handleDataFromChild4} />
 
-        <div className='flex-1 mx-1 my-1'>
-          <span></span>
-          <i></i>
-        </div>
-        <div className='flex-1 mx-1 my-1'>
-          <span></span>
-          <i></i>
-        </div>
       </div>
-      <div>
-        <label htmlFor="" className='px-2 py-1.5 bg-gray-100'>密码长度</label>
+      <div className='flex mb-3'>
+        <label htmlFor="" className='w-44 text-center px-2 py-1.5 bg-gray-100 border'>密码长度</label>
         <input 
           type="number" min="1" max="20" 
-          className='w-48 border border-gray-200 pl-1'
+          className='w-48 border border-gray-200 pl-2'
           value={lenText}
           onChange={handleInputChange}
         />
       </div>
       <div className='flex place-content-center'>
         <div>
-          <button className='px-4 py-2 m-2 bg-green-500 text-white' onClick={handleButtonClick}>生成密码</button>
-          <button className='px-4 py-2 m-2 border' onClick={handleCopy}>复制结果</button>
+          <button className='px-4 py-2 mx-2 mb-3 bg-emerald-600 hover:bg-emerald-500 text-white' onClick={handleButtonClick}>生成密码</button>
+          <button className='px-4 py-2 mx-2 mb-3 border hover:border-emerald-600' onClick={handleCopy}>复制结果</button>
         </div>
       </div>
     
@@ -159,6 +151,9 @@ function App() {
         <div className='px-3 py-2 h-10'>{text}</div>
       </div>
       <MyAlert message="复制成功" isOpen={isModalOpen} />
+    </div>
+    <div className='fixed bottom-0 w-full p-4 bg-gray-800 text-gray-400'>
+      © 2024 Frank_Star 版权所有
     </div>
     </Fragment>
   );

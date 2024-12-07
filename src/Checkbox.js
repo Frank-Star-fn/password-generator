@@ -14,9 +14,9 @@ function Checkbox(props) {
 
     let divClassName = "";
     if(isClicked === true){
-        divClassName = "flex-1 mx-1 my-1 bg-white";
+        divClassName = "flex items-center flex-none ms-2.5 my-1 bg-gray-300 hover:bg-gray-400 text-white";
     }else{
-        divClassName = "flex-1 mx-1 my-1 bg-green-400";
+        divClassName = "flex items-center flex-none ms-2.5 my-1 bg-green-5FB878 text-white";
     }
 
     props.onDataReceived(isClicked);
@@ -26,7 +26,7 @@ function Checkbox(props) {
             className={divClassName}
             onClick={handleClick} // 绑定点击事件处理函数
         >
-            <span>{message}</span>
+            <span className='px-3'>{message}</span>
             <i></i>
         </div>
     );
