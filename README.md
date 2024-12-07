@@ -1,5 +1,8 @@
 # Password Generator
 
+一个基于前端的简易的密码生成器。\
+技术栈：React + Tailwind CSS
+
 ### 运行截屏
 <img src="./img_show/page1-1.png" width="75%" class="aligncenter">
 <!-- ![image](./img_show/page1-1.png) -->
@@ -16,7 +19,7 @@
 ```
 npm start
 ```
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+在浏览器中打开 [http://localhost:3000](http://localhost:3000) 查看。
 
 ### 启动 Tailwind CLI 
 ```
