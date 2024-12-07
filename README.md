@@ -4,16 +4,18 @@
 技术栈：React + Tailwind CSS
 
 ### 运行截屏
-<img src="./img_show/page1-1.png" width="75%" class="aligncenter">
-<!-- ![image](./img_show/page1-1.png) -->
+<div align=center>
+    <img src="./img_show/page1-1.png" width="75%" class="aligncenter">
+</div>
 
-<style type="text/css">
+<!-- ![image](./img_show/page1-1.png) -->
+<!-- <style type="text/css">
   .aligncenter {
     clear: both;
     display: block;
     margin: auto;
   }
-</style>
+</style> -->
 
 ### 启动项目
 ```
